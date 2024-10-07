@@ -21,6 +21,20 @@ To set up and run PunkMail locally, follow these steps:
 
 3. Set up environment variables:
    Create a `.env.local` file in the root directory and add necessary variables (e.g., API keys).
+   # THE MOST IMPORTANT OF ALL
+   SMTP_USER= yourgmail@gmail.com
+   SMTP_PASS = yourSMTPpassword!
+
+` Steps to get the # SMTP_PASS for Gmail:
+
+Go to your Google Account settings.
+Navigate to Security.
+Under "Signing in to Google," enable 2-Step Verification if you haven't already.
+After enabling 2FA, go to the App Passwords section.
+Create a new app password, selecting Mail as the app and your device as the one you're generating it for.
+Google will provide a 16-character app password, which is your SMTP_PASS. `
+
+
 
 4. Run the development server:
    ```bash
