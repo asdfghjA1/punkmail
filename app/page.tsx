@@ -1,5 +1,6 @@
 // app/page.tsx
 "use client"
+import React from 'react';
 import { useState, useEffect } from 'react';
 
 const AnimatedBackground = () => {
@@ -97,7 +98,7 @@ export default function Home() {
   return (
     <>
       <AnimatedBackground />
-      <div className="min-h-screen bg-apple-dark bg-opacity-90 flex flex-col justify-center items-center p-6 relative z-10">
+      <div className="min-h-screen bg-apple-dark bg-opacity-90 flex flex-col justify-center items-center p-6 relative z-10 text-black">
         <div className="w-full max-w-md backdrop-blur-sm bg-apple-dark bg-opacity-50 p-8 rounded-2xl shadow-lg">
           <h1 className="text-3xl font-semibold text-center mb-8 text-apple-white">Send an Email</h1>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -134,7 +135,7 @@ export default function Home() {
             <div>
               <button
                 type="submit"
-                className="w-full bg-apple-blue text-apple-white font-semibold py-3 rounded-lg hover:bg-apple-blue-dark focus:outline-none focus:ring-2 focus:ring-apple-blue-light transition-all duration-300"
+                className="w-full bg-apple-blue text-apple-white font-semibold py-3 rounded-lg hover:bg-apple-blue-dark focus:outline-none focus:ring-2 focus:ring-apple-blue-light transition-all duration-300 text-white border"
               >
                 Send Email
               </button>
